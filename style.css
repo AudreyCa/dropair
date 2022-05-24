@@ -114,7 +114,7 @@
     background-size: cover;
   }
 
-  .home .hero {
+  .home .hero, .merci .hero {
     background-image: url(assets/img/paysage-accueil.jpg);
   
   }
@@ -260,6 +260,15 @@
       display: inline-block;
       color: var(--primary-color);
       margin-right: 10px;
+    }
+
+    .merci a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .merci a:hover {
+      text-decoration: underline;
     }
 
     /********** FORM **********/

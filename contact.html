@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icons/favicon.png" />
     <script src="https://kit.fontawesome.com/d16b05e8a9.js" crossorigin="anonymous"></script>
     <title>Drop' Air | Contactez-nous</title>
 </head>
@@ -35,11 +36,16 @@
         </nav>
 
     <main class="content">
-        <form action="">
-            <input type="text" name="name" placeholder="Prénom Nom">
-            <input type="email"name="email" placeholder="Mail">
-            <input type="text" name="object" placeholder="Objet">
-            <textarea name="message" placeholder="Message"></textarea>
+
+        <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='Remerciement.html';}"></iframe>
+
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSd-jOUrlY5BJXBE7bV0EDqAc_SDcl-zuvLxRQzyTHA5GBkwAw/formResponse" 
+        method="post" target="hidden_iframe" onsubmit="submitted=true;">
+            <input type="text" name="entry.1208490527" placeholder="Prénom Nom">
+            <input type="email"name="entry.1247277520" placeholder="Mail">
+            <input type="text" name="entry.558238206" placeholder="Objet">
+            <textarea name="entry.54604013" placeholder="Message"></textarea>
             <button>Envoyer</button>
         </form>
 
