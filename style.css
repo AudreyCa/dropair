@@ -1,0 +1,295 @@
+/********** SETTING **********/
+
+*,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --primary-color: #F26938;
+    --secondary-color: #79B4D9;
+    --text-color: grey;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  body {
+    margin: 0
+  }
+
+
+  h1, h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+
+  h1 {
+    color: white;
+  }
+
+  h2 {
+    text-align: center;
+    color: var(--primary-color);
+  }
+
+  .title-brand {
+    text-transform: uppercase;
+  }
+
+  button {
+    cursor:pointer;
+  }
+
+
+
+  /********** HEADER **********/
+  
+  header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .topbar {
+    padding: 0 20px;
+    height: 60px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .topbar a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .topbar .logo-brand {
+    width: 40px;
+  }
+
+  .topbar .title-brand {
+    margin-left: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  
+  .topbar .button {
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    border: none;
+  }
+
+  .topbar .button a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .hero {
+    background-image: url(assets/img/paysage-accueil.jpg);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .navbar {
+    background-color: var(--primary-color);
+    height: 60px;;
+  }
+
+  .navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+
+  .navbar a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+
+    /********** FOOTER **********/
+
+    footer {
+      padding: 50px;
+      height: 500px;
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+      align-items: center;
+    }
+
+    footer .title-brand {
+      font-size: 48px;
+      font-weight: bold;
+    }
+
+    footer .logo-brand {
+      width: 120px;
+    }
+
+    .social-icons,  .mentions  {
+      font-size: 40px;
+    }
+
+    .social-icons {
+      width: 300px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .social-icons i  {
+      cursor: pointer;
+    }
+
+
+    /********** CONTENT **********/
+
+    main {
+      font-size: 32px;
+      line-height: 2em;
+      text-align: center;
+      color: var(--text-color);
+    }
+
+    .content {
+      padding: 100px;
+    }
+
+    .bottles {
+      background-color: var(--primary-color);
+      padding: 60px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .pdf-link {
+      margin-top: 100px;
+      line-height: 0.2em;
+      color: var(--primary-color)
+    }
+
+    .pdf-link button {
+      height: 90px;
+      width: 450px;
+      border-radius: 20px;
+      background-color: var(--primary-color);
+      border: none;
+    }
+
+    .pdf-link button a {
+      color: white;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    address {
+      margin-top: 200px;
+      line-height: 0.2em;
+      font-style: normal;
+    }
+
+    address i {
+      display: inline-block;
+      color: var(--primary-color);
+      margin-right: 10px;
+    }
+
+    /********** FORM **********/
+
+    form {
+      margin: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    input, textarea {
+      border: none;
+      outline: none;
+      border-bottom: var(--primary-color) 1px solid;
+      margin-bottom: 100px;
+      font-size: 36px;
+    }
+
+    input {
+      height: 70px;
+    }
+
+    form button {
+      height: 80px;
+      width: 350px;
+      border-radius: 20px;
+      background-color: var(--primary-color);
+      border: none;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+   
+
+
+
+  
+
+  
+
+  
+
+  /********** ANIMATIONS **********/
+
+  .milk-bottle {
+    width: 40px;
+    height:100px;
+  }
+
+
+.milk-bottle2 {
+  width: 80px;
+  height: 200px;
+
+}
+
+.mask-rect {
+	animation: empty 5s ease-in-out .5s infinite;
+}
+
+@keyframes empty {
+	0% { height: 100; }
+	100% { height: 0%; }
+}
+
+@keyframes fill {
+	0% { height: 0; }
+	100% { height: 100%; }
+}
+
+
+
+  
+
+
+  
