@@ -58,7 +58,7 @@
 
   .topbar {
     padding: 0 20px;
-    height: 60px;
+    height: 80px;
     background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
@@ -88,7 +88,11 @@
     border-radius: 20px;
     background-color: var(--primary-color);
     border: none;
+    padding: 10px 20px;
+   
   }
+
+
 
   .topbar .button a {
     color: white;
@@ -99,12 +103,35 @@
     font-family: 'Ubuntu', sans-serif;
   }
 
+  
+
   .hero {
-    background-image: url(assets/img/paysage-accueil.jpg);
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .home .hero {
+    background-image: url(assets/img/paysage-accueil.jpg);
+  
+  }
+
+  .decouvrir .hero {
+    background-image: url(assets/img/paysage-accueil2.jpg);
+  
+  }
+
+  .agir .hero {
+    background-image: url(assets/img/paysage-accueil3.jpg);
+  
+  }
+
+  .contact .hero {
+    background-image: url(assets/img/paysage-accueil4.jpg);
+  
   }
 
 
@@ -115,7 +142,7 @@
     position: sticky;
     top: 0;
     background-color: var(--primary-color);
-    box-shadow: 0px 100px 0px 0px white;
+    border-bottom: 2px solid var(--secondary-color)
   }
 
 
@@ -135,6 +162,10 @@
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
+  }
+
+  .navbar a:hover {
+    color: var(--secondary-color);
   }
 
 
@@ -263,17 +294,37 @@
       font-weight: bold;
     }
 
-   
-
-
-
-  
-
-  
-
-  
 
   /********** ANIMATIONS **********/
+
+  /* boutons */
+
+  button {
+    transition: all 0.3s ease-in-out;
+  }
+
+  button:hover {
+    transform: scale(0.8);
+  }
+
+  /* gouttes */
+
+   .drop {
+    animation: drop 5s ease-in-out alternate infinite;
+  }
+  
+  @keyframes drop {
+    0% { 
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(50px);
+    }
+  }
+
+
+
+  /* bouteilles */
 
   .milk-bottle {
     width: 40px;
@@ -288,7 +339,7 @@
 }
 
 .mask-rect {
-	animation: empty 5s ease-in-out .5s infinite;
+	animation: fill 5s ease-in-out .5s infinite;
 }
 
 @keyframes empty {
